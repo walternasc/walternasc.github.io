@@ -155,6 +155,16 @@
             </div>
 
         </div>
+        <!-- Dica de como navegar no slide-->
+        <div class="hint">
+            <p>Use a barra de espaço ou as teclas de navegação</p>
+        </div>
+        <script>
+            if ("ontouchstart" in document.documentElement) {
+                document.querySelector(".hint").innerHTML = "<p>Arraste para direita ou esquerda</p>";
+            }
+        </script>
+
 
         <script src="js/impress.js"></script>
         <script>impress().init();</script>
